@@ -274,7 +274,7 @@ class SonataUserExtension extends Extension
     public function configureShortcut(ContainerBuilder $container)
     {
         $container->setAlias('sonata.user.authentication.form', 'fos_user.profile.form.factory');
-        $container->setAlias('sonata.user.authentication.form_handler', 'fos_user.profile.form.handler');
+        $container->setAlias('sonata.user.authentication.form_handler', 'fos_user.profile.form.handler.factory');
     }
 
     /**
